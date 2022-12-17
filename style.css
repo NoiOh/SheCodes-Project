@@ -17,6 +17,7 @@ a {
 .interface-display {
   border: 1px solid rgb(216, 216, 216);
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 
 .search-display {
@@ -48,4 +49,8 @@ a {
 
 #forecast-description {
   text-transform: capitalize;
+}
+
+.github {
+  font-size: 10px;
 }
