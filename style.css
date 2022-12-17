@@ -1,4 +1,51 @@
-h1 {
-  color: blueviolet;
-  text-align: center;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 60px auto;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.interface-display {
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+
+.search-display {
+  padding: 20px 20px;
+}
+
+.content-space {
+  margin-top: 20px;
+}
+
+.forecast {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.degree {
+  font-size: 10px;
+  position: relative;
+  top: -6px;
+}
+
+.summary {
+  font-size: 16px;
+}
+
+.bottom-display {
+  padding: 50px 10px;
+}
+
+#forecast-description {
+  text-transform: capitalize;
 }
