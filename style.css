@@ -47,10 +47,10 @@ a {
   padding: 50px 10px;
 }
 
-#forecast-description {
-  text-transform: capitalize;
+.wrapper {
+  font-size: 10px;
 }
 
-.github {
-  font-size: 10px;
+#forecast-description {
+  text-transform: capitalize;
 }
