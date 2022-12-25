@@ -28,15 +28,10 @@ a {
   margin-top: 20px;
 }
 
-.forecast {
-  font-size: 18px;
-  padding-left: 10px;
-}
-
 .degree {
   font-size: 10px;
   position: relative;
-  top: -6px;
+  top: -18px;
 }
 
 .summary {
@@ -53,4 +48,9 @@ a {
 
 #forecast-description {
   text-transform: capitalize;
+  font-size: 18px;
+}
+
+#forecast-temp {
+  font-size: 36px;
 }

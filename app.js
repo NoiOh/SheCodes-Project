@@ -26,9 +26,10 @@ function formatDate(timestamp) {
 function showWeather(response) {
   //console.log(response.data);
   //console.log(response.data.sys.country);
-  let dateElement = document.querySelector("#date");
   let city = response.data.name;
   let country = response.data.sys.country;
+  let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city-name").innerHTML = `${city}, ${country}`;
   document.querySelector("#forecast-description").innerHTML =
     response.data.weather[0].description;
@@ -42,6 +43,10 @@ function showWeather(response) {
     response.data.wind.speed
   )} km/h`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 // Default City
@@ -71,7 +76,6 @@ function retrievePosition(position) {
   let lon = position.coords.longitude;
   let units = "metric";
   let apiKey = "c819171fe0abdc14039af4ef5dda283b";
-  //let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   axios.get(url).then(showWeather);
 }
