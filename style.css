@@ -4,14 +4,13 @@ body {
   margin: 60px auto;
   max-width: 800px;
 }
+a {
+  text-decoration: none;
+}
 
 h2 {
   font-size: 28px;
   margin-bottom: 0px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .interface-display {
@@ -30,6 +29,7 @@ a {
 
 .degree {
   font-size: 10px;
+  font-weight: bold;
   position: relative;
   top: -18px;
 }
@@ -40,6 +40,11 @@ a {
 
 .bottom-display {
   padding: 50px 10px;
+}
+
+.weather-description .active {
+  color: black;
+  cursor: default;
 }
 
 .wrapper {

@@ -43,20 +43,24 @@
       <div>Last updated: <span id="date"></span></div>
       <div class="row content-space">
         <div class="col-sm-6">
-          <img src="" class="rounded float-start" alt="" id="icon" />
-          <span class="forecast" id="forecast-description"></span>
-          <br />
-          <span class="forecast" id="forecast-temp"></span>
-          <span class="degree">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></span
-          >
+          <div class="weather-description">
+            <img src="" class="rounded float-start" alt="" id="icon" />
+            <span class="forecast" id="forecast-description"></span>
+            <br />
+            <span class="forecast" id="forecast-temp"></span>
+            <span class="degree">
+              <a href="#" id="celsius-link" class="active">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
+          </div>
         </div>
         <div class="col-sm-6">
-          <p class="summary">
-            Humidity: <span id="humidity">%</span><br />
-            Wind: <span id="wind">km/h</span>
-          </p>
+          <div>
+            <p class="summary">
+              Humidity: <span id="humidity">%</span><br />
+              Wind: <span id="wind">km/h</span>
+            </p>
+          </div>
         </div>
       </div>
 
