@@ -1,15 +1,14 @@
 // Date & Time
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   let days = [
     "Sunday",
     "Monday",
@@ -19,20 +18,15 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let dayIndex = days[date.getDay()];
-
-  let formattedDate = `${dayIndex} ${hours}:${minutes}`;
-  return formattedDate;
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
 }
-
-let dateElement = document.querySelector("#date");
-let currentDate = new Date();
-dateElement.innerHTML = formatDate(currentDate);
 
 // Display Weather
 function showWeather(response) {
   //console.log(response.data);
   //console.log(response.data.sys.country);
+  let dateElement = document.querySelector("#date");
   let city = response.data.name;
   let country = response.data.sys.country;
   document.querySelector("#city-name").innerHTML = `${city}, ${country}`;
@@ -47,6 +41,7 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = `${Math.round(
     response.data.wind.speed
   )} km/h`;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 // Default City
