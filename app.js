@@ -1,14 +1,17 @@
 // Date & Time
 function formatDate(timestamp) {
   let date = new Date(timestamp);
+
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
   let days = [
     "Sunday",
     "Monday",
@@ -19,7 +22,10 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+
+  //return `${day} ${hours}:${minutes}`;
+  let formattedDate = `${day} ${hours}:${minutes}`;
+  return formattedDate;
 }
 
 // Display Weather
