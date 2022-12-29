@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container interface-display">
+    <div class="container interface-body">
       <form id="search-form">
         <div class="row">
           <div class="col-8 search-display">
@@ -44,7 +44,7 @@
       <div class="row content-space">
         <div class="col-sm-6">
           <div class="weather-description">
-            <img src="" class="rounded float-start" alt="" id="icon" />
+            <img src="" class="float-start" alt="" id="icon" />
             <span class="forecast" id="forecast-description"></span>
             <br />
             <span class="forecast" id="forecast-temp"></span>
@@ -64,20 +64,7 @@
         </div>
       </div>
 
-      <div class="weather-forecast">
-        <div class="row col-2">
-          <div class="weather-forecast-date">Friday</div>
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
-            alt=""
-            width="24"
-          />
-          <div class="weather-forecast-temp">
-            <span class="weather-forecast-temp-max">18°</span>
-            <span class="weather-forecast-temp-min">13°</span>
-          </div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="weather-forecast"></div>
 
       <br />
     </div>

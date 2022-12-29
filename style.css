@@ -13,7 +13,7 @@ h2 {
   margin-bottom: 0px;
 }
 
-.interface-display {
+.interface-body {
   border: 1px solid rgb(216, 216, 216);
   border-radius: 10px;
   margin-bottom: 5px;
@@ -57,7 +57,7 @@ h2 {
 }
 
 .weather-forecast-date {
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.6;
 }
 
