@@ -51,6 +51,24 @@ h2 {
   font-size: 10px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temp {
+  font-size: 10px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
 #forecast-description {
   text-transform: capitalize;
   font-size: 18px;
